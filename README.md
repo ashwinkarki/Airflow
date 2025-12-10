@@ -93,3 +93,26 @@ catchup=False → No old DAG runs will be executed.
 | `schedule_interval` | How often DAG runs            | `"@daily"`     | Runs everyday at midnight    |
 | `catchup`           | Should Airflow run past dates | `False`        | No backfill                  |
 
+Cron jobs:
+
+Breakdown of "0 12 * * *"
+
+| Field | Meaning      | Value             |
+| ----- | ------------ | ----------------- |
+| `0`   | Minute       | 0th minute        |
+| `12`  | Hour         | 12 PM             |
+| `*`   | Day of Month | Every day         |
+| `*`   | Month        | Every month       |
+| `*`   | Day of Week  | Every day of week |
+
+🧠 Want more cron examples?
+
+I can also explain:
+
+"*/5 * * * *" → every 5 minutes
+
+"0 */2 * * *" → every 2 hours
+
+"30 6 * * 1" → every Monday at 6:30 AM
+
+"0 0 1 * *" → first day of month at midnight
